@@ -1,0 +1,22 @@
+<div class="uno">
+    <div class="container-fluid">
+        <div class="carousel-products">
+            <div class="row" >
+                @for (item of productList; track item.id) {
+                <div class="card col-md-3" id="cards">
+                    <div class="carousel-product">
+                        <div class="img-center">
+                            <img src="{{item.image}}" alt="">
+                        </div>
+                        <p class="titulo">{{item.title}}</p>
+                        <h5 class="precio"> $ {{item.price}}</h5>
+                        <p class="categoria">{{item.category}}</p>
+                        <div class="cont">
+                            <button class="btn btn-primary" (click)="showDetails(item)">Detalles</button>
+                        </div>
+                    </div>
+                </div>}
+            </div>
+        </div>
+    </div>
+    </div>

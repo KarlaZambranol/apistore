@@ -1,0 +1,148 @@
+.uno{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+  }
+  
+  .card-top {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      word-wrap: break-word;
+      background: #fff;
+      background-clip: border-box;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: .25rem;
+  }
+  .titulo{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100ch;
+    font-size: 22px;
+    text-align: center;
+  }
+  .titulo:hover{
+    color: #3483fa;
+  }
+  .precio{
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .categoria{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100ch;
+    font-size: 14px;
+    color: #3483fa;
+    text-align: center;
+  }
+  
+  
+  .item img {
+      width: 64px;    
+  }
+  
+  .item {
+      margin: 0px 15px;
+      text-align: center;
+  }
+  
+  .item a:hover {
+      color: blue;
+  }
+  
+  .card {
+      padding: 10px;
+      margin: 20px;
+      height: 420px; 
+  }
+  
+  .cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cont button{
+    font-size: 17px;
+    width: 50%;
+    padding: 4px;
+    padding-top: 0;
+  }
+  
+  .card img {
+      height: 200px;
+      width: 80%;
+      object-fit: contain;
+      margin-bottom: 15px;
+      transition: 0.3s ease-in-out;
+  }
+  
+  .card img:hover {
+      transition: 0.3s ease-in-out;
+      transform: scale(1.1);
+  }
+  
+  .img-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .container-fluid {
+      overflow: hidden;
+      overflow-x: hidden;
+    }
+    
+    .carousel-products {
+      /* display: flex; */
+      /*animation: slide 200s infinite linear;*/
+      animation: slide 100s infinite linear;
+      white-space: nowrap;
+    }
+    
+    .carousel-product {
+      margin-right: 20px;
+      transition: transform 0.5s ease;
+    }
+    
+    .row {
+      flex-wrap: unset !important;
+    }
+  
+    @keyframes slide {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+    
+    .next-product{
+      position:absolute;
+      background-color: #dbf3ffb8;
+      z-index: 200;
+      color: #3483fa;
+      width: 70px;
+      height: 70px;
+      font-size: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      outline: none;
+      border: none;
+      top: 50%;
+      right: 35px;
+      cursor: pointer;
+    }
+  
+    .next-product:hover{
+      transition: box-shadow 0.2s ease-in-out;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
